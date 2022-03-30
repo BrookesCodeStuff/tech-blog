@@ -1,3 +1,9 @@
+:root {
+  --chocolate: 35, 16, 16;
+  --mint: 217, 234, 211;
+  --gray: 158, 157, 159;
+}
+
 /* ---------------- */
 /* Modern CSS Reset */
 /* ---------------- */
@@ -20,9 +26,9 @@ p {
 }
 
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
-ul[role="list"],
-ol[role="list"] {
+ul {
   list-style: none;
+  padding: 0;
 }
 
 /* Set core root defaults */
@@ -32,14 +38,14 @@ html:focus-within {
 
 /* Set core body defaults */
 body {
+  width: 100vw;
   min-height: 100vh;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
 }
 
-/* A elements that don't have a class get default styles */
-a:not([class]) {
-  text-decoration-skip-ink: auto;
+a {
+  text-decoration: none;
 }
 
 /* Inherit fonts for inputs and buttons */
@@ -72,4 +78,71 @@ select {
 
 body {
   font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(var(--mint));
+}
+
+header {
+  background-color: rgb(var(--chocolate));
+  padding: 2vw;
+}
+
+header h1 {
+  background-color: rgb(var(--mint));
+  color: rgb(var(--chocolate));
+  display: inline-block;
+  padding: 5px 12px;
+  margin-top: 15px;
+  box-shadow: 5px 5px 0 rgba(158, 157, 159, 1);
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+nav a {
+  color: rgb(var(--mint));
+  font-size: 1.2rem;
+  margin-right: 2vw;
+}
+
+.post,
+.comments,
+.login-form {
+  border: 2px solid rgb(var(--chocolate));
+  margin: 10px auto 0px auto;
+  width: 95vw;
+}
+
+.banner {
+  background-color: rgb(var(--chocolate));
+  color: rgb(var(--mint));
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+}
+
+.title {
+  font-size: 1.3rem;
+  width: 80%;
+}
+
+.byline {
+  font-size: 0.7rem;
+}
+
+.content {
+  color: rgb(var(--chocolate));
+  padding: 5px 10px;
+}
+
+.comment {
+  padding: 0 10px;
+}
+
+.comment:nth-child(odd) {
+  background-color: rgb(var(--chocolate), 0.8);
+  color: rgb(var(--mint));
+}
+
+.comment-by {
+  margin-bottom: 5px;
 }

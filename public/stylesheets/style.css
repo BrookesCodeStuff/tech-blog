@@ -42,10 +42,12 @@ body {
   min-height: 100vh;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
+  font-size: 18px;
 }
 
 a {
   text-decoration: none;
+  cursor: pointer;
 }
 
 /* Inherit fonts for inputs and buttons */
@@ -103,9 +105,29 @@ nav a {
   margin-right: 2vw;
 }
 
+input {
+  border: none;
+  padding: 5px;
+  margin-bottom: 10px;
+  width: 100%;
+  border-radius: 5px;
+}
+
+button {
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(var(--chocolate));
+  color: rgb(var(--mint));
+  width: 100%;
+  padding: 5px 0;
+  font-size: 1.3rem;
+}
+
 .post,
 .comments,
-.login-form {
+.login-form,
+.signup-form,
+.new-post-form {
   border: 2px solid rgb(var(--chocolate));
   margin: 10px auto 0px auto;
   width: 95vw;
@@ -134,8 +156,8 @@ nav a {
   padding: 5px 10px;
 }
 
-.comment {
-  padding: 0 10px;
+.content-wrapper {
+  padding: 5px 15px;
 }
 
 .comment:nth-child(odd) {

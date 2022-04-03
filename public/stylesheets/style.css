@@ -105,7 +105,8 @@ nav a {
   margin-right: 2vw;
 }
 
-input {
+input,
+textarea {
   border: none;
   padding: 5px;
   margin-bottom: 10px;
@@ -167,4 +168,10 @@ button {
 
 .comment-by {
   margin-bottom: 5px;
+}
+
+.dashboard-posts,
+.comment-form {
+  margin: 10px auto 0px auto;
+  width: 95vw;
 }

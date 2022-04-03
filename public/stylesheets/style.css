@@ -119,16 +119,23 @@ button {
   border-radius: 5px;
   background-color: rgb(var(--chocolate));
   color: rgb(var(--mint));
-  width: 100%;
+  width: 90%;
+  margin-left: 5%;
   padding: 5px 0;
   font-size: 1.3rem;
+}
+
+button:nth-child(even) {
+  margin-top: 4px;
+  margin-bottom: 4px;
 }
 
 .post,
 .comments,
 .login-form,
 .signup-form,
-.new-post-form {
+.new-post-form,
+.edit-post-form {
   border: 2px solid rgb(var(--chocolate));
   margin: 10px auto 0px auto;
   width: 95vw;
